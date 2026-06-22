@@ -1,35 +1,37 @@
+@import url("../styles/aboutUs.css");
+
 * {
+  margin: 0;
   box-sizing: border-box;
   border: none;
   text-decoration: none;
 }
-
 body {
-  margin: 0;
   font-family: 'Inter', sans-serif;
   background-color: #6A984D;
   color: #386641;
+  overflow-x: hidden;
 }
 
-/* Основной блок */
 .about-main {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 80px 100px;
-  background-image: url('../assets/images/4.png');
+  background-image: url('../assets/images/Онас.png');
   background-size: cover;
   background-position: center;
 }
 
-.about-title {
-  font-size: 48px;
-  font-weight: 700;
+.about-main h1 {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 100%;
   color: #F2E8CF;
   margin-bottom: 60px;
 }
 
-/* ГРИД — ТОЧНО ПО ТВОЕЙ СХЕМЕ */
 .about-grid {
   display: grid;
   gap: 40px;
@@ -45,76 +47,51 @@ body {
     "approach team";
 }
 
-/* Привязка карточек */
+.about-card {
+  background-color: #F2E8CF;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
 .card-values {
   grid-area: values;
+  background-image: url('../assets/images/Frame 2087328000.png');
+  background-position: bottom -5px right -5px;
 }
 
 .card-mission {
   grid-area: mission;
+  background-image: url('../assets/images/Frame 2087328002.png');
+  background-position: bottom -5px left -5px;
 }
 
 .card-approach {
   grid-area: approach;
+  background-image: url('../assets/images/Frame 2087328003.png');
+  background-position: bottom -5px left -5px;
 }
 
 .card-team {
   grid-area: team;
+  background-image: url('../assets/images/Frame 2087328001.png');
+  background-position: bottom -5px right -5px;
 }
 
-/* Стили карточек */
-.about-card {
-  position: relative;
-  background-color: #F2E8CF;
-  border-radius: 20px;
-  padding: 30px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  overflow: hidden;
-}
-
+/* Текст */
 .about-card h2 {
   font-size: 28px;
   color: #386641;
   margin-bottom: 20px;
-  position: relative;
-  z-index: 1;
 }
 
 .about-card p {
   font-size: 18px;
   line-height: 1.5;
   color: #386641;
-  position: relative;
-  z-index: 1;
-}
-
-/* Псевдо‑элементы для фоновых картинок */
-.about-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  opacity: 0.15;
-  z-index: 0;
-}
-
-/* Индивидуальные картинки */
-.card-values::before {
-  background-image: url('../assets/images/лист22цв.png');
-}
-
-.card-mission::before {
-  background-image: url('../assets/images/помидоры2цв.png');
-}
-
-.card-approach::before {
-  background-image: url('../assets/images/земля2цв.png');
-}
-
-.card-team::before {
-  background-image: url('../assets/images/Пульвириз2цв.png');
 }
 
 
@@ -124,45 +101,57 @@ body {
 
 
 
-
-.footer {
-  width: 100%;
-  background-color: #386641;
-  padding: 24px 80px;
+.footer-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #386641;
+  width: 100%;
+  height: 100px;
+  padding: 0 40px;
   box-sizing: border-box;
+  gap: 5px;
 }
 
-.footer__left,
-.footer__center,
-.footer__right {
+.footer-left {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
 }
 
-.footer__icon {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-  cursor: pointer;
-}
-
-.footer__logo {
-  height: 40px;
+.footer-icon {
+  width: 50px;
+  height: 50px;
   object-fit: contain;
 }
 
-.footer__text,
-.footer__phone {
-  margin: 0;
+.footer-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5px;
+}
+
+.footer-text,
+.footer-phone {
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 18px;
   color: #F2E8CF;
 }
-
 
 
 
@@ -210,10 +199,39 @@ body {
   border-radius: 25px;
 }
 
-.darkgreen{
+
+
+
+.text-green-serif {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #386641;
+  text-align: left;
+}
+
+.darkgreen {
   color: #386641;
 }
 
+.green {
+  color: #6A984D;
+}
 
+.white {
+  color: #F2E8CF;
+}
 
+.bdarkgreen {
+  background-color: #386641;
+}
 
+.bgreen {
+  background-color: #6A984D;
+}
+
+.bwhite {
+  background-color: #F2E8CF;
+}

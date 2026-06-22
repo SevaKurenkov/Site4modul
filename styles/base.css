@@ -4,6 +4,7 @@
   text-decoration: none;
 }
 
+
 body {
   width: 100%;
   height: 100%;
@@ -101,14 +102,6 @@ body {
   color: #F2E8CF;
 }
 
-.subtitle {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 140%;
-  color: #F2E8CF;
-  width: 360px;
-}
 
 .buttons {
   display: flex;
@@ -239,7 +232,7 @@ body {
 
 .text-green-serif {
   font-family: "Source Serif Pro", serif;
-  font-weight: 600; /* SemiBold */
+  font-weight: 600;
   font-size: 100px;
   line-height: 100%;
   letter-spacing: 0px;
@@ -264,7 +257,7 @@ body {
   background-image: url("../assets/images/3.png");
   background-size: cover;
   background-position: center;
-  padding: 80px 150px 80px 150px;
+  padding: 80px 150px 150px 150px;
   box-sizing: border-box;
 }
 
@@ -278,7 +271,7 @@ body {
 .catalog-categories {
   display: flex;
   gap: 10px;
-  margin-top: 24px;
+
 }
 
 .catalog-btn {
@@ -327,7 +320,6 @@ body {
 .catalog-cards {
   display: flex;
   gap: 24px;
-  margin-top: 32px;
 }
 
 .catalog-card {
@@ -451,6 +443,7 @@ body {
   justify-content: start;
   width: 100%;
   height: 720px;
+  gap: 10px;
   background-color: #F2E8CF;
   background-image: url("../assets/images/5.png");
   background-size: cover;
@@ -471,17 +464,15 @@ body {
   font-weight: 500;
   font-size: 20px;
   color: #386641;
-  margin-top: 12px;
 }
 
 .feedback-form {
   display: grid;
   grid-template-rows: 1fr 1fr auto auto;
-  grid-row-gap: 15px;
+  grid-row-gap: 10px;
   width: 100%;
   max-width: 900px;
-  height: 300px;
-  margin-top: 40px;
+
 }
 
 .form-row {
