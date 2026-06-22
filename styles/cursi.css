@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #6A984D;
+  color: #386641;
+}
+
+
+
+.text-main {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 110%;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F2E8CF;
+  padding: 12px 24px;
+  border-radius: 0 0 24px 24px;
+  width: 100%;
+  height: 56px;
+  position: absolute;
+  z-index: 10;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-button {
+  background-color: #386641;
+  color: #F2E8CF;
+
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.darkgreen{
+  color: #386641;
+}
+
+
+
+
+
+
+/* ===== Заголовок ===== */
+
+.courses-header {
+  text-align: center;
+  padding: 60px 0 40px;
+}
+
+.courses-title {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 64px;
+  font-weight: 700;
+  color: #F2E8CF;
+}
+
+/* ===== Фильтры ===== */
+
+.courses-filter {
+  background: #386641;
+  border-radius: 30px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+}
+
+.filter-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.filter-main {
+  background: #F2E6CC;
+  border: 2.9px solid #386641;
+  border-radius: 29px;
+  font-weight: 600;
+  font-size: 22px;
+  color: #386641;
+  padding: 14px 20px;
+  cursor: pointer;
+}
+
+.filter-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter-sub button {
+  background: #F2E6CC;
+  border: 2.9px solid #386641;
+  border-radius: 29px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #386641;
+  padding: 12px 18px;
+  cursor: pointer;
+}
+
+.filter-sub button.active {
+  background: #6A984D;
+  color: #F2E8CF;
+}
+
+/* ===== Сетка курсов ===== */
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 100px;
+}
+
+.course-card {
+  background: #F2E8CF;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 8px 40px -12px rgba(60, 80, 55, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* место под картинку — без серого прямоугольника, просто контейнер */
+.course-image {
+  width: 100%;
+  height: 360px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: transparent; /* сюда потом вставишь background-image или <img> */
+}
+
+.course-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.course-name {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #386641;
+  margin: 0;
+}
+
+.course-desc {
+  font-size: 18px;
+  font-weight: 500;
+  color: #386641;
+  margin: 0;
+}
+
+.course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.course-tags span {
+  background: #386641;
+  color: #F2E8CF;
+  border-radius: 30px;
+  padding: 6px 14px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* ===== Футер ===== */
+
+.footer-section {
+  background: #386641;
+  color: #F2E8CF;
+  padding: 20px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-logo {
+  height: 40px;
+}
+
+.footer-icon {
+  height: 28px;
+  width: 28px;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-phone {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}

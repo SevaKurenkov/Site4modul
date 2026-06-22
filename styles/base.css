@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   border: none;
+  text-decoration: none;
 }
 
 body {
@@ -10,30 +11,66 @@ body {
   flex-direction: column;
 }
 
+
+
+
+
+
+.text-main {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 110%;
+}
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #F2E8CF;
-  padding: 12px 40px;
-  border-radius: 0 0 20px 20px;
+  padding: 12px 24px;
+  border-radius: 0 0 24px 24px;
   width: 100%;
-  position: relative;
+  height: 56px;
+  position: absolute;
   z-index: 10;
 }
 
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-button {
+  background-color: #386641;
+  color: #F2E8CF;
+
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+
+
+
+
+
+
+
 .first-section {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
   height: 720px;
   background-color: #6A984D;
   background-image: url("../assets/images/1.png");
   background-size: cover;
   background-position: center;
-  margin-top: -40px;
-  padding: 160px 150px 24px 80px;
+  padding: 80px 24px 150px 24px;
   box-sizing: border-box;
   position: relative;
   z-index: 1;
@@ -47,11 +84,20 @@ body {
   height: fit-content;
 }
 
+.allsontent {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: fit-content;
+  height: fit-content;
+}
+
 .title {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Source Serif Pro', sans-serif;
   font-weight: 600;
-  font-size: 64px;
-  line-height: 110%;
+  font-size: 140px;
+  line-height: 68%;
+  letter-spacing: -3px;
   color: #F2E8CF;
 }
 
@@ -71,21 +117,7 @@ body {
   height: fit-content;
 }
 
-.btn-green {
-  background-color: #386641;
-  color: #F2E8CF;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  padding: 10px 24px;
-  border-radius: 25px;
-}
-
-.btn-light {
-  background-color: #F2E8CF;
-  color: #386641;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
+.buttonAbsolute {
   font-size: 16px;
   padding: 10px 24px;
   border-radius: 25px;
@@ -108,27 +140,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
-}
-
-.logo img {
-  height: 40px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 40px;
-}
-
-
-
-.nav-button {
-  background-color: #386641;
-  color: #F2E8CF;
-
-  font-size: 16px;
-  font-weight: 500;
-  padding: 10px 24px;
-  border-radius: 25px;
 }
 
 
@@ -157,7 +168,7 @@ body {
   font-weight: 600;
   font-size: 64px;
   color: #386641;
-  margin-bottom: 40px;
+
 }
 
 .discounts-container {
@@ -165,7 +176,6 @@ body {
   gap: 48px;
   width: fit-content;
   height: fit-content;
-  margin-bottom: 48px;
 }
 
 .discount-card {
@@ -284,7 +294,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 48px;
+
   width: 100%;
 }
 
@@ -382,7 +392,6 @@ body {
   font-weight: 600;
   font-size: 64px;
   color: #F2E8CF;
-  margin-bottom: 24px;
 }
 
 .about-box {
@@ -561,10 +570,28 @@ body {
 }
 
 
-.text-main {
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 110%;
+
+
+.darkgreen {
   color: #386641;
+}
+
+.green {
+  color: #6A984D;
+}
+
+.white {
+  color: #F2E8CF;
+}
+
+.bdarkgreen {
+  background-color: #386641;
+}
+
+.bgreen {
+  background-color: #6A984D;
+}
+
+.bwhite {
+  background-color: #F2E8CF;
 }
