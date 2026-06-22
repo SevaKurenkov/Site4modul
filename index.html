@@ -10,8 +10,6 @@
 </head>
 
 <body>
-
-
     <header class="navbar">
         <a class="logo" href="index.html">
             <img src="assets/images/логозел.png" alt="">
@@ -52,7 +50,7 @@
 
 
     <section class="discounts-section">
-        <h2 class="discounts-title">Скидки</h2>
+        <h2 class="discounts-title text-green-serif">Скидки</h2>
 
         <div class="discounts-container">
             <div class="discount-card card-left">
@@ -66,11 +64,11 @@
             </div>
         </div>
 
-        <button class="discounts-btn">Больше предложений</button>
+        <a class="text-main buttonAbsolute bdarkgreen white">Больше предложений</a>
     </section>
 
     <section class="catalog-section">
-        <h2 class="catalog-title">Каталог</h2>
+        <h2 class="text-green-serif white">Каталог</h2>
 
         <div class="catalog-categories">
             <button class="catalog-btn catalog-btn-left">Агрохимикаты</button>
@@ -112,7 +110,7 @@
     <section class="about-section">
         <div class="about-container">
             <div class="about-card">
-                <h2 class="about-title">О нас</h2>
+                <h2 class="text-green-serif white">О нас</h2>
                 <div class="about-box">
                     <p class="about-text">
                         Everbloom — это место, где выращивание становится простым и по-настоящему приятным.
@@ -120,12 +118,12 @@
                         видео-уроки и поддержку экспертов. С Everbloom каждый может сказать:
                         «Я смог вырастить сам».
                     </p>
-                    <button class="about-btn">Подробнее о нас</button>
+                    <button class="text-main buttonAbsolute white bdarkgreen">Подробнее о нас</button>
                 </div>
             </div>
 
             <div class="about-card">
-                <h2 class="about-title">Курсы</h2>
+                <h2 class="text-green-serif white">Курсы</h2>
                 <div class="about-box">
                     <p class="about-text">
                         Наши курсы помогают уверенно пройти путь от семян до здоровых растений.
@@ -133,7 +131,7 @@
                         Программы подходят и новичкам, и тем, кто хочет расти дальше —
                         вы быстро увидите результат и почувствуете уверенность.
                     </p>
-                    <button class="about-btn">Подробнее о курсах</button>
+                    <a class="text-main buttonAbsolute white bdarkgreen">Подробнее о курсах</a>
                 </div>
             </div>
         </div>
@@ -143,18 +141,23 @@
         <h2 class="feedback-title">Форма обратной связи</h2>
         <p class="feedback-subtitle">Оставьте вашу заявку, и мы свяжемся с вами</p>
 
-        <form class="feedback-form">
+        <form id="feedback-form" class="feedback-form">
             <div class="form-row">
-                <input type="text" name="name" placeholder="Имя" class="form-input">
-                <input type="email" name="email" placeholder="Почта" class="form-input">
+                <input type="text" name="name" placeholder="Имя" class="form-input" required>
+                <input type="email" name="email" placeholder="Почта" class="form-input" required>
             </div>
 
-            <input type="text" name="subject" placeholder="Тема" class="form-input">
+            <input type="text" name="subject" placeholder="Тема" class="form-input" required>
 
-            <textarea name="message" placeholder="Сообщение" class="form-textarea"></textarea>
+            <textarea name="message" placeholder="Сообщение" class="form-textarea" required></textarea>
+
+            <input type="hidden" name="submittedAt">
 
             <button type="submit" class="form-btn">ОТПРАВИТЬ</button>
+
+            <p class="form-status" id="form-status"></p>
         </form>
+
     </section>
 
 
