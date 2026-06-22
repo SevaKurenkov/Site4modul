@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #6A984D;
+  color: #386641;
+}
+
+/* Заголовок */
+.events-header {
+  text-align: center;
+  padding: 60px 0 40px;
+}
+
+.events-title {
+  font-size: 64px;
+  font-weight: 700;
+  color: #F2E8CF;
+}
+
+/* Карточки событий */
+.events-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 100px;
+}
+
+.event-card {
+  display: flex;
+  gap: 30px;
+  background: #F2E8CF;
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow: 0 8px 40px -12px rgba(60, 80, 55, 0.25);
+  width: 100%;
+}
+
+.event-image {
+  flex: 0 0 200px;
+  height: 280px;
+  border: 5px solid #386641;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #FFE8B7; /* временный фон */
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event-name {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.event-status {
+  font-size: 22px;
+  font-weight: 600;
+  color: #6A984D;
+  margin-bottom: 20px;
+}
+
+.event-desc {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.event-btn {
+  align-self: flex-start;
+  background: #386641;
+  color: #F2E8CF;
+  border: none;
+  border-radius: 9999px;
+  padding: 10px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Футтер */
+.footer-section {
+  width: 100%;
+  background-color: #386641;
+  padding: 24px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-logo {
+  height: 40px;
+}
+
+.footer-text,
+.footer-phone {
+  color: #F2E8CF;
+  margin: 0;
+}
+
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F2E8CF;
+  padding: 12px 40px;
+  border-radius: 0 0 20px 20px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-button {
+  background-color: #386641;
+  color: #F2E8CF;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 25px;
+}
