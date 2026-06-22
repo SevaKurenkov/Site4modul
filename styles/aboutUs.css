@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #6A984D;
+  color: #386641;
+}
+
+/* Основной блок */
+.about-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 100px;
+  background-image: url('../assets/images/4.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.about-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #F2E8CF;
+  margin-bottom: 60px;
+}
+
+/* ГРИД — ТОЧНО ПО ТВОЕЙ СХЕМЕ */
+.about-grid {
+  display: grid;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+
+  grid-template-areas:
+    "values mission"
+    "approach mission"
+    "approach team";
+}
+
+/* Привязка карточек */
+.card-values {
+  grid-area: values;
+}
+
+.card-mission {
+  grid-area: mission;
+}
+
+.card-approach {
+  grid-area: approach;
+}
+
+.card-team {
+  grid-area: team;
+}
+
+/* Стили карточек */
+.about-card {
+  position: relative;
+  background-color: #F2E8CF;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.about-card h2 {
+  font-size: 28px;
+  color: #386641;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-card p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #386641;
+  position: relative;
+  z-index: 1;
+}
+
+/* Псевдо‑элементы для фоновых картинок */
+.about-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+/* Индивидуальные картинки */
+.card-values::before {
+  background-image: url('../assets/images/лист22цв.png');
+}
+
+.card-mission::before {
+  background-image: url('../assets/images/помидоры2цв.png');
+}
+
+.card-approach::before {
+  background-image: url('../assets/images/земля2цв.png');
+}
+
+.card-team::before {
+  background-image: url('../assets/images/Пульвириз2цв.png');
+}
+
+
+
+
+
+
+
+
+
+.footer {
+  width: 100%;
+  background-color: #386641;
+  padding: 24px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.footer__left,
+.footer__center,
+.footer__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.footer__logo {
+  height: 40px;
+  object-fit: contain;
+}
+
+.footer__text,
+.footer__phone {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #F2E8CF;
+}
+
+
+
+
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F2E8CF;
+  padding: 12px 40px;
+  border-radius: 0 0 20px 20px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-button {
+  background-color: #386641;
+  color: #F2E8CF;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 25px;
+}
+
+
+
+
+

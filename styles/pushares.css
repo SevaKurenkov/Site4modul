@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #6A984D;
+  color: #386641;
+}
+
+/* === Каталог === */
+.catalog-page {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.catalog-title {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 64px;
+  font-weight: 600;
+  color: #F2E8CF;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* === Контент === */
+.catalog-content {
+  display: flex;
+  gap: 40px;
+}
+
+/* === Левая панель === */
+.catalog-sidebar {
+  background: #386641;
+  border-radius: 0 30px 0 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 300px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.filter-main {
+  background: #F2E6CC;
+  border: 2px solid #386641;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 22px;
+  color: #386641;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.filter-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.filter-sub button {
+  background: #F2E6CC;
+  border: 2px solid #386641;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #386641;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.filter-sub button.active {
+  background: #6A984D;
+  color: #F2E8CF;
+}
+
+/* === Правая часть === */
+.catalog-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Поиск */
+.search-bar {
+  background: #F2E6CC;
+  border-radius: 25px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  color: #386641;
+  outline: none;
+}
+
+/* Сетка карточек */
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.catalog-card {
+  background: #F2E8CF;
+  border-radius: 30px;
+  height: 380px;
+  box-shadow: 0 8px 40px -12px rgba(60, 80, 55, 0.25);
+}
+
+/* === Левая панель === */
+.catalog-sidebar {
+  background: #386641;
+  border-radius: 0 30px 0 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 300px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.filter-main {
+  background: #F2E6CC;
+  border: 2px solid #386641;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 22px;
+  color: #386641;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.filter-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+/* Элемент фильтра с кнопкой и индикатором */
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Квадрат‑индикатор */
+.filter-dot {
+  width: 20px;
+  height: 20px;
+  background: #F2E6CC;
+  border-radius: 4px;
+  border: 2px solid #386641;
+  transition: background-color 0.3s;
+}
+
+.filter-dot.active {
+  background: #6A984D;
+}
+
+/* Кнопки подпунктов */
+.filter-item button {
+  background: #F2E6CC;
+  border: 2px solid #386641;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #386641;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-item button:hover {
+  background: #D9CBAA;
+}
+
+
+
+
+
+
+
+
+
+
+.footer-section {
+  width: 100%;
+  background-color: #386641;
+  padding: 24px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.footer-logo {
+  height: 40px;
+  object-fit: contain;
+}
+
+.footer-text,
+.footer-phone {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #F2E8CF;
+}
+
+
+
+
+
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F2E8CF;
+  padding: 12px 40px;
+  border-radius: 0 0 20px 20px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-button {
+  background-color: #386641;
+  color: #F2E8CF;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 25px;
+}
