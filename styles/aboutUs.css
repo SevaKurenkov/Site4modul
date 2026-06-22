@@ -12,12 +12,12 @@ body {
   color: #386641;
   overflow-x: hidden;
 }
-
 .about-main {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 80px 100px;
+  gap: 20px;
   background-image: url('../assets/images/Онас.png');
   background-size: cover;
   background-position: center;
@@ -29,7 +29,6 @@ body {
   font-size: 100px;
   line-height: 100%;
   color: #F2E8CF;
-  margin-bottom: 60px;
 }
 
 .about-grid {
@@ -48,8 +47,11 @@ body {
 }
 
 .about-card {
+  display: flex;
+  flex-direction: column;
   background-color: #F2E8CF;
   border-radius: 20px;
+  gap: 20px;
   padding: 50px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   background-size: contain;
@@ -85,7 +87,6 @@ body {
 .about-card h2 {
   font-size: 28px;
   color: #386641;
-  margin-bottom: 20px;
 }
 
 .about-card p {
@@ -93,6 +94,7 @@ body {
   line-height: 1.5;
   color: #386641;
 }
+
 
 
 
@@ -158,7 +160,6 @@ body {
 
 
 
-
 .text-main {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -210,6 +211,27 @@ body {
   letter-spacing: 0px;
   color: #386641;
   text-align: left;
+}
+
+.text-main {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 110%;
+  text-decoration: none;
+}
+
+.text-green-serif {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #386641;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .darkgreen {

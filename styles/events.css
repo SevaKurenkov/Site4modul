@@ -28,7 +28,6 @@ body {
   align-items: center;
   gap: 40px;
   max-width: 1200px;
-  margin: 0 auto 100px;
 }
 
 .event-card {
@@ -44,7 +43,6 @@ body {
 .event-image {
   flex: 0 0 200px;
   height: 280px;
-  border: 5px solid #386641;
   border-radius: 10px;
   overflow: hidden;
   background-color: #FFE8B7;
@@ -66,20 +64,17 @@ body {
 .event-name {
   font-size: 36px;
   font-weight: 600;
-  margin: 0 0 10px;
 }
 
 .event-status {
   font-size: 22px;
   font-weight: 600;
   color: #6A984D;
-  margin-bottom: 20px;
 }
 
 .event-desc {
   font-size: 20px;
   line-height: 1.4;
-  margin-bottom: 30px;
 }
 
 .event-btn {
@@ -195,4 +190,59 @@ body {
 
 .darkgreen{
   color: #386641;
+}
+
+.eventscenter{
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.text-main {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 110%;
+  text-decoration: none;
+}
+
+.text-green-serif {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #386641;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.darkgreen {
+  color: #386641;
+}
+
+.green {
+  color: #6A984D;
+}
+
+.white {
+  color: #F2E8CF;
+}
+
+.bdarkgreen {
+  background-color: #386641;
+}
+
+.bgreen {
+  background-color: #6A984D;
+}
+
+.bwhite {
+  background-color: #F2E8CF;
 }

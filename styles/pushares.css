@@ -12,8 +12,13 @@ body {
 }
 
 .catalog-page {
-  max-width: 1280px;
-  margin: 0 auto;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 100px 50px 0px 0px;
+
 }
 
 .catalog-title {
@@ -22,7 +27,6 @@ body {
   font-weight: 600;
   color: #F2E8CF;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .catalog-content {
@@ -61,7 +65,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-left: 20px;
 }
 
 .filter-sub button {
@@ -111,10 +114,18 @@ body {
 }
 
 .catalog-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #F2E8CF;
   border-radius: 30px;
   height: 380px;
-  box-shadow: 0 8px 40px -12px rgba(60, 80, 55, 0.25);
+  padding: 10px;
+}
+
+.catalog-card img {
+  width: 263px;
+  height: 368px;
 }
 
 .catalog-sidebar {
@@ -148,7 +159,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-left: 10px;
 }
 
 .filter-item {
@@ -247,6 +257,7 @@ body {
 
 
 
+
 .text-main {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -280,6 +291,7 @@ body {
 .nav-button {
   background-color: #386641;
   color: #F2E8CF;
+
   font-size: 16px;
   font-weight: 500;
   padding: 10px 20px;
@@ -288,4 +300,59 @@ body {
 
 .darkgreen{
   color: #386641;
+}
+
+.eventscenter{
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.text-main {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 110%;
+  text-decoration: none;
+}
+
+.text-green-serif {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #386641;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.darkgreen {
+  color: #386641;
+}
+
+.green {
+  color: #6A984D;
+}
+
+.white {
+  color: #F2E8CF;
+}
+
+.bdarkgreen {
+  background-color: #386641;
+}
+
+.bgreen {
+  background-color: #6A984D;
+}
+
+.bwhite {
+  background-color: #F2E8CF;
 }
